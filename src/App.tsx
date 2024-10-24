@@ -1,35 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Crossword from '@jaredreisinger/react-crossword';
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+const data = {
+  across: {
+    1: {
+      clue: 'Ghostly greeting',
+      answer: 'BOO',
+      row: 1,
+      col: 1,
+    },
+    4: {
+      clue: 'Signature clue',
+      answer: 'JOHN',
+      row: 2,
+      col: 0,
+    },
+    5: {
+      clue: 'Pixar Flik',
+      answer: 'ANT',
+      row: 3,
+      col: 1,
+    },
+    6: {
+      clue: 'Sunday animation',
+      answer: 'TOON',
+      row: 4,
+      col: 1,
+    },
+  },
+  down: {
+    1: {
+      clue: 'Aquatic vehicle',
+      answer: 'BOAT',
+      row: 1,
+      col: 1,
+    },
+    2: {
+      clue: 'Expression of dismay',
+      answer: 'OHNO',
+      row: 1,
+      col: 2,
+    },
+    3: {
+      clue: 'Square dumpling',
+      answer: 'WONTON',
+      row: 0,
+      col: 3,
+    },
+  },
 }
 
-export default App
+const style = {
+  highlightBackground: 'rgba(204, 229, 255, 0.6)'
+}
+
+export default function App() {
+    return <Crossword data={data} theme={style}/>
+}
