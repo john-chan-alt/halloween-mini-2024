@@ -52,7 +52,8 @@ const data = {
 }
 
 const style = {
-  highlightBackground: 'rgba(204, 229, 255, 0.6)'
+  highlightBackground: 'rgba(204, 229, 255, 0.6)',
+  focusBackground: 'rgb(255, 128, 13)',
 }
 
 export default function App() {
