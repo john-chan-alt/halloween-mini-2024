@@ -1,5 +1,6 @@
 import './App.css'
 import Crossword from '@jaredreisinger/react-crossword';
+import Stopwatch from './Stopwatch.tsx'
 
 const data = {
   across: {
@@ -55,5 +56,10 @@ const style = {
 }
 
 export default function App() {
-    return <Crossword data={data} theme={style}/>
+    return ( 
+      <div>
+        <Stopwatch/>
+        <Crossword data={data} theme={style}/>
+      </div>
+    )
 }
