@@ -44,7 +44,7 @@ const data = {
       col: 2,
     },
     3: {
-      clue: 'Square dumpling',
+      clue: 'Soupy staple of Chinatown',
       answer: 'WONTON',
       row: 0,
       col: 3,
