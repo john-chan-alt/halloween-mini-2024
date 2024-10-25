@@ -44,3 +44,16 @@
 .clues {
   color: #FFF;
 }
+
+body {
+  background-color: #1E1E1E;
+}
+
+.stopwatch-time {
+  text-align: center;
+  color: #FFF;
+  font-size: 80px;
+  max-width:200px; 
+  max-height:200px;
+  margin-bottom: 0px;
+}
