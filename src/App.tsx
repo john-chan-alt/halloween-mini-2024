@@ -11,13 +11,13 @@ const data = {
       col: 1,
     },
     4: {
-      clue: 'Signature clue',
+      clue: 'Signature clue?',
       answer: 'JOHN',
       row: 2,
       col: 0,
     },
     5: {
-      clue: 'Pixar Flik',
+      clue: 'Pixar Flik?',
       answer: 'ANT',
       row: 3,
       col: 1,
